@@ -1,15 +1,57 @@
 //your JS code here. If required.
 let codes = document.querySelectorAll(".code");
-codes.forEach((code, index) => {
-  code.addEventListener("keydown", (e) => {
-    e.preventDefault();
-    let val = e.key;
-    // code.value = val;
-    if (val == "Backspace") focusPrev(index);
-    else focusNext(index, val);
-  });
-});
+let code1 = document.getElementById("code-1");
+let code2 = document.getElementById("code-2");
+let code3 = document.getElementById("code-3");
+let code4 = document.getElementById("code-4");
+let code5 = document.getElementById("code-5");
+let code6 = document.getElementById("code-6");
+// codes.forEach((code, index) => {
+//   code.addEventListener("keydown", (e) => {
+//     e.preventDefault();
+//     let val = e.key;
+//     // code.value = val;
+//     if (val == "Backspace") focusPrev(index);
+//     else focusNext(index, val);
+//   });
+// });
 
+code1.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  let val = e.key;
+  if (val == "Backspace") focusPrev(0);
+  else focusNext(0, val);
+});
+code2.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  let val = e.key;
+  if (val == "Backspace") focusPrev(1);
+  else focusNext(1, val);
+});
+code3.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  let val = e.key;
+  if (val == "Backspace") focusPrev(2);
+  else focusNext(2, val);
+});
+code4.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  let val = e.key;
+  if (val == "Backspace") focusPrev(3);
+  else focusNext(3, val);
+});
+code5.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  let val = e.key;
+  if (val == "Backspace") focusPrev(4);
+  else focusNext(4, val);
+});
+code6.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  let val = e.key;
+  if (val == "Backspace") focusPrev(5);
+  else focusNext(5, val);
+});
 function focusNext(idx, val) {
   codes[idx].value = val;
   let next = idx + 1;
