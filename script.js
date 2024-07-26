@@ -15,7 +15,7 @@ let code6 = document.getElementById("code-6");
 //     else focused(index, val);
 //   });
 // });
-
+code1.focus();
 code1.addEventListener("keydown", (e) => {
   e.preventDefault();
   let val = e.key;
