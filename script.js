@@ -16,38 +16,44 @@ let code6 = document.getElementById("code-6");
 //   });
 // });
 
-code1.addEventListener("keydown", (e) => {
+code1.addEventListener("focus", (e) => {
   e.preventDefault();
+  //   if (code1.value == "") return;
   let val = e.key;
   if (val == "Backspace") focusPrev(0);
   else focusNext(0, val);
 });
-code2.addEventListener("keydown", (e) => {
+code2.addEventListener("focus", (e) => {
   e.preventDefault();
+  //   if (code2.value == "") return;
   let val = e.key;
   if (val == "Backspace") focusPrev(1);
   else focusNext(1, val);
 });
-code3.addEventListener("keydown", (e) => {
+code3.addEventListener("focus", (e) => {
   e.preventDefault();
+  //   if (code3.value == "") return;
   let val = e.key;
   if (val == "Backspace") focusPrev(2);
   else focusNext(2, val);
 });
-code4.addEventListener("keydown", (e) => {
+code4.addEventListener("focus", (e) => {
   e.preventDefault();
+  //   if (code4.value == "") return;
   let val = e.key;
   if (val == "Backspace") focusPrev(3);
   else focusNext(3, val);
 });
-code5.addEventListener("keydown", (e) => {
+code5.addEventListener("focus", (e) => {
   e.preventDefault();
+  //   if (code5.value == "") return;
   let val = e.key;
   if (val == "Backspace") focusPrev(4);
   else focusNext(4, val);
 });
-code6.addEventListener("keydown", (e) => {
+code6.addEventListener("focus", (e) => {
   e.preventDefault();
+  //   if (code6.value == "") return;
   let val = e.key;
   if (val == "Backspace") focusPrev(5);
   else focusNext(5, val);
